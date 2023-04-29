@@ -34,7 +34,7 @@ db.query('CREATE DATABASE IF NOT EXISTS resume', (err, result) => {
 });
 
 // Create a new table in the database
-db.query('CREATE TABLE IF NOT EXISTS students (username VARCHAR(900000000), phone VARCHAR(9000000000000), SchoolName VARCHAR(9000000000), studentClass VARCHAR(900000000000), rollNo VARCHAR(9000000000), adress VARCHAR(9000000000))', (err, result) => {
+db.query('CREATE TABLE IF NOT EXISTS students (username VARCHAR(900000), phone VARCHAR(900000), SchoolName VARCHAR(90000), studentClass VARCHAR(90000), rollNo VARCHAR(90000), adress VARCHAR(900000))', (err, result) => {
     if (err) {
         console.error('Error creating table: ' + err.stack);
         return;
