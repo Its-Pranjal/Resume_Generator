@@ -37,9 +37,9 @@ const Form = () => {
           onClick={() => {
             if (page === FormTittle.length - 1) {
               axios
-                .post("https://resume-x2z1.onrender.com/" , formData)
+                .post("http://localhost:4000/create-pdf" , formData)
                 .then(() =>
-                  axios.get("http://localhost:4000", {
+                  axios.get("http://localhost:4000/fetch-pdf", {
                     responseType: "blob",
                   })
                 )
