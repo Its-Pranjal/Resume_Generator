@@ -39,7 +39,7 @@ const Form = () => {
               axios
                 .post("https://resume-x2z1.onrender.com/" , formData)
                 .then(() =>
-                  axios.get("https://resume-x2z1.onrender.com/", {
+                  axios.get("http://localhost:4000", {
                     responseType: "blob",
                   })
                 )
